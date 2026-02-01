@@ -10,143 +10,142 @@
       font-family: Inter, sans-serif;
       margin: 0;
       padding: 48px;
-    }
-
-    header {
-      margin-bottom: 48px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
       font-size: 2.2rem;
       font-weight: 700;
-      margin: 0;
+      margin-bottom: 32px;
     }
 
-    .subtitle {
-      color: #64748b;
-      margin-top: 6px;
-      font-size: 0.95rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
+    .org {
       border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 20px;
-      transition: box-shadow 0.2s, transform 0.2s;
-      background: #ffffff;
+      border-radius: 14px;
+      margin-bottom: 16px;
+      overflow: hidden;
     }
 
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    .top {
+    .org-header {
       display: flex;
       align-items: center;
       gap: 14px;
+      padding: 16px 20px;
+      cursor: pointer;
+      background: #ffffff;
+      transition: background 0.15s;
+    }
+
+    .org-header:hover {
+      background: #f8fafc;
     }
 
     .logo {
-      width: 40px;
-      height: 40px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       object-fit: cover;
       background: #f1f5f9;
     }
 
-    .org {
+    .org-name {
       font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .badge {
-      display: inline-block;
-      margin-top: 4px;
-      padding: 3px 8px;
-      border-radius: 999px;
-      font-size: 0.7rem;
-      background: #e2e8f0;
-      color: #334155;
-    }
-
-    .title {
       font-size: 1rem;
-      font-weight: 500;
-      margin: 14px 0 6px 0;
-      line-height: 1.4;
+      flex: 1;
     }
 
-    .meta {
+    .arrow {
       font-size: 0.8rem;
       color: #64748b;
-      margin-bottom: 10px;
+      transition: transform 0.2s;
     }
 
-    a {
-      font-size: 0.85rem;
+    .org.open .arrow {
+      transform: rotate(180deg);
+    }
+
+    .prs {
+      display: none;
+      border-top: 1px solid #e5e7eb;
+      background: #fafafa;
+    }
+
+    .org.open .prs {
+      display: block;
+    }
+
+    .pr {
+      padding: 12px 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .pr:first-child {
+      border-top: none;
+    }
+
+    .pr a {
       color: #2563eb;
       text-decoration: none;
-      font-weight: 500;
     }
 
-    a:hover {
+    .pr a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Amishhaa</h1>
-  <div class="subtitle">Open source work</div>
-</header>
-
-<div class="grid" id="list"></div>
+<h1>Amishhaa</h1>
+<div id="list"></div>
 
 <script>
 fetch("./data.json")
   .then(r => r.json())
   .then(data => {
-
-    // Rename closed -> merged (for GitHub PRs)
-    data = data.map(c => {
-      if (c.source === "github" && c.status === "closed") {
-        c.status = "merged";
-      }
-      return c;
-    });
-
     const list = document.getElementById("list");
 
+    // group by org
+    const groups = {};
     data.forEach(c => {
-      const div = document.createElement("div");
-      div.className = "card";
-      div.innerHTML = `
-        <div class="top">
-          <img src="${c.logo}" class="logo">
-          <div>
-            <div class="org">${c.org}</div>
-            <div class="badge">${c.source}</div>
-          </div>
-        </div>
-
-        <div class="title">${c.title}</div>
-
-        <div class="meta">
-          ${c.status}${c.date ? " · " + c.date : ""}
-        </div>
-
-        <a href="${c.link}" target="_blank">View</a>
-      `;
-      list.appendChild(div);
+      if (!groups[c.org]) {
+        groups[c.org] = { logo: c.logo, prs: [] };
+      }
+      groups[c.org].prs.push(c);
     });
+
+    for (const org in groups) {
+      const container = document.createElement("div");
+      container.className = "org";
+
+      const header = document.createElement("div");
+      header.className = "org-header";
+      header.innerHTML = `
+        <img src="${groups[org].logo}" class="logo">
+        <div class="org-name">${org}</div>
+        <div class="arrow">▼</div>
+      `;
+
+      const prs = document.createElement("div");
+      prs.className = "prs";
+
+      groups[org].prs.forEach(pr => {
+        const div = document.createElement("div");
+        div.className = "pr";
+        div.innerHTML = `<a href="${pr.link}" target="_blank">${pr.title}</a>`;
+        prs.appendChild(div);
+      });
+
+      header.onclick = () => {
+        container.classList.toggle("open");
+      };
+
+      container.appendChild(header);
+      container.appendChild(prs);
+      list.appendChild(container);
+    }
   });
 </script>
 
