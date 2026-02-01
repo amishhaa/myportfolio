@@ -1,33 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Kernel Portfolio</title>
+  <title>Amishhaa — Open Source</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { background:#0f172a; color:white; font-family:sans-serif; }
-    .card { background:#1e293b; padding:15px; margin:10px; border-radius:10px; }
-    .github { border-left:4px solid #3b82f6; }
-    .kernel { border-left:4px solid #22c55e; }
+    body {
+      background: radial-gradient(circle at top, #1e293b, #020617);
+      color: white;
+      font-family: Inter, sans-serif;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(30,41,59,0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: white;
+      object-fit: cover;
+    }
+
+    .org {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      background: #334155;
+      margin-top: 4px;
+    }
+
+    .github { background:#1d4ed8; }
+    .git-kernel { background:#f59e0b; }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .title {
+      font-size: 1.1rem;
+      margin: 15px 0;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: #cbd5f5;
+    }
   </style>
 </head>
 <body>
 
-<h1>🚀 My Open Source Contributions</h1>
-<div id="list"></div>
+<h1>🚀 Open Source Contributions</h1>
+<div class="grid" id="list"></div>
 
 <script>
-fetch("data.json")
+fetch("./data.json")
   .then(r => r.json())
   .then(data => {
     const list = document.getElementById("list");
     data.forEach(c => {
       const div = document.createElement("div");
-      div.className = "card " + c.source;
+      div.className = "card";
       div.innerHTML = `
-        <h3>${c.title}</h3>
-        <p>Source: ${c.source}</p>
-        <p>Status: ${c.status}</p>
-        <a href="${c.link}" target="_blank">View</a>
-        <p>${c.date}</p>
+        <div class="top">
+          <img src="${c.logo}" class="logo">
+          <div>
+            <div class="org">${c.org}</div>
+            <div class="badge ${c.source}">${c.source}</div>
+          </div>
+        </div>
+
+        <div class="title">${c.title}</div>
+
+        <div class="meta">
+          Status: ${c.status}<br>
+          ${c.date || ""}
+        </div>
+
+        <a href="${c.link}" target="_blank">View contribution →</a>
       `;
       list.appendChild(div);
     });
