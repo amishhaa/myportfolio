@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Amishhaa</title>
+  <meta charset="UTF-8">
+  <title>Amishhaa Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
   <style>
+    /* Base styles */
     body {
-      background: #cce7ff; /* light blue sky */
+      background: #cce7ff;
       color: #0f172a;
       font-family: Inter, sans-serif;
       margin: 0;
@@ -17,30 +21,6 @@
       overflow-x: hidden;
     }
 
-    /* Clouds */
-    .cloud {
-      position: absolute;
-      top: 0;
-      width: 150px;
-      height: 90px;
-      background: url('assets/image.png') no-repeat center/contain;
-      opacity: 0.8;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    @keyframes moveCloud1 { 0% { left: -200px; } 100% { left: 110%; } }
-    @keyframes moveCloud2 { 0% { left: -250px; } 100% { left: 110%; } }
-    @keyframes moveCloud3 { 0% { left: -180px; } 100% { left: 110%; } }
-    @keyframes moveCloud4 { 0% { left: -220px; } 100% { left: 110%; } }
-    @keyframes moveCloud5 { 0% { left: -200px; } 100% { left: 110%; } }
-
-    .cloud1 { top: 50px; animation: moveCloud1 120s linear infinite; }
-    .cloud2 { top: 120px; animation: moveCloud2 150s linear infinite; }
-    .cloud3 { top: 200px; animation: moveCloud3 180s linear infinite; }
-    .cloud4 { top: 300px; animation: moveCloud4 200s linear infinite; }
-    .cloud5 { top: 400px; animation: moveCloud5 220s linear infinite; }
-
     h1 {
       font-size: 2.2rem;
       font-weight: 700;
@@ -49,6 +29,16 @@
       z-index: 1;
     }
 
+    /* Clouds */
+    .cloud {
+      position: absolute;
+      background: url('assets/image.png') no-repeat center/contain;
+      opacity: 0.8;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Orgs & PRs */
     .org {
       border: 1px solid #e5e7eb;
       border-radius: 14px;
@@ -84,14 +74,18 @@
       flex: 1;
     }
 
-    .arrow {
-      font-size: 0.8rem;
-      color: #64748b;
-      transition: transform 0.2s;
+    /* Heart dropdown button */
+    .heart-btn {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
     }
 
-    .org.open .arrow { transform: rotate(180deg); }
+    .org.open .heart-btn {
+      transform: rotate(180deg);
+    }
 
+    /* PRs */
     .prs {
       display: none;
       border-top: 1px solid #e5e7eb;
@@ -114,65 +108,99 @@
     }
 
     .pr a:hover { text-decoration: underline; }
+    .pixel-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 40px;
+  color: #f14ea8; /* solid fill color, e.g., blue */
+  
+  /* black outline */
+  -webkit-text-stroke: 2px black; /* works in Chrome/Safari */
+  -moz-text-stroke: 2px black;    /* Firefox */
+  text-stroke: 2px black;         /* future proof */
+  
+  /* optional: keep crisp pixel look */
+  letter-spacing: 0;
+}
 
   </style>
 </head>
 <body>
 
-<!-- Clouds -->
-<div class="cloud cloud1"></div>
-<div class="cloud cloud2"></div>
-<div class="cloud cloud3"></div>
-<div class="cloud cloud4"></div>
-<div class="cloud cloud5"></div>
-
-<h1>Amishhaa</h1>
+<h1 class="pixel-title">AMISHA</h1>
+<h3 class="pixel-title">This is a collection of my Open Source Contributions.</h3>
 <div id="list"></div>
 
 <script>
-fetch("./data.json")
-  .then(r => r.json())
-  .then(data => {
-    const list = document.getElementById("list");
+  // === Dynamic Clouds ===
+  const cloudCount = 10;
+  const cloudContainer = document.body;
+  const windowHeight = window.innerHeight;
 
-    // group by org
-    const groups = {};
-    data.forEach(c => {
-      if (!groups[c.org]) {
-        groups[c.org] = { logo: c.logo, prs: [] };
-      }
-      groups[c.org].prs.push(c);
-    });
+  for(let i = 0; i < cloudCount; i++) {
+    const cloud = document.createElement("div");
+    cloud.className = "cloud";
+    cloud.style.width = `${150 + Math.random()*150}px`;  // width between 150-300
+    cloud.style.height = `${90 + Math.random()*80}px`;   // height 90-170
+    cloud.style.top = `${Math.random() * (windowHeight - 100)}px`;
+    cloud.style.left = `${-200 - Math.random()*500}px`; // start offscreen left
 
-    for (const org in groups) {
-      const container = document.createElement("div");
-      container.className = "org";
+    const speed = 100 + Math.random()*150; // seconds to cross
+    cloud.style.animation = `moveCloud linear ${speed}s infinite`;
+    cloudContainer.appendChild(cloud);
+  }
 
-      const header = document.createElement("div");
-      header.className = "org-header";
-      header.innerHTML = `
-        <img src="${groups[org].logo}" class="logo">
-        <div class="org-name">${org}</div>
-        <div class="arrow">▼</div>
-      `;
+  // Cloud animation keyframes
+  const style = document.createElement('style');
+  style.innerHTML = `
+    @keyframes moveCloud {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(${window.innerWidth + 400}px); }
+    }
+  `;
+  document.head.appendChild(style);
 
-      const prs = document.createElement("div");
-      prs.className = "prs";
+  // === Load PR data ===
+  fetch("./data.json")
+    .then(r => r.json())
+    .then(data => {
+      const list = document.getElementById("list");
+      const groups = {};
 
-      groups[org].prs.forEach(pr => {
-        const div = document.createElement("div");
-        div.className = "pr";
-        div.innerHTML = `<a href="${pr.link}" target="_blank">${pr.title}</a>`;
-        prs.appendChild(div);
+      // group by org
+      data.forEach(c => {
+        if(!groups[c.org]) groups[c.org] = { logo: c.logo, prs: [] };
+        groups[c.org].prs.push(c);
       });
 
-      header.onclick = () => { container.classList.toggle("open"); };
+      for(const org in groups) {
+        const container = document.createElement("div");
+        container.className = "org";
 
-      container.appendChild(header);
-      container.appendChild(prs);
-      list.appendChild(container);
-    }
-  });
+        const header = document.createElement("div");
+        header.className = "org-header";
+        header.innerHTML = `
+          <img src="${groups[org].logo}" class="logo">
+          <div class="org-name">${org}</div>
+          <img src="assets/heart.png" class="heart-btn">
+        `;
+
+        const prs = document.createElement("div");
+        prs.className = "prs";
+
+        groups[org].prs.forEach(pr => {
+          const div = document.createElement("div");
+          div.className = "pr";
+          div.innerHTML = `<a href="${pr.link}" target="_blank">${pr.title}</a>`;
+          prs.appendChild(div);
+        });
+
+        header.onclick = () => { container.classList.toggle("open"); };
+
+        container.appendChild(header);
+        container.appendChild(prs);
+        list.appendChild(container);
+      }
+    });
 </script>
 
 </body>
