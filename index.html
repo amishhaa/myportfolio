@@ -1,101 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Amishhaa — Open Source</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Amishhaa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background: radial-gradient(circle at top, #1e293b, #020617);
-      color: white;
+      background: #ffffff;
+      color: #0f172a;
       font-family: Inter, sans-serif;
       margin: 0;
-      padding: 40px;
+      padding: 48px;
+    }
+
+    header {
+      margin-bottom: 48px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .subtitle {
+      color: #64748b;
+      margin-top: 6px;
+      font-size: 0.95rem;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 20px;
+      gap: 24px;
     }
 
     .card {
-      background: rgba(30,41,59,0.8);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
       padding: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: box-shadow 0.2s, transform 0.2s;
+      background: #ffffff;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
     .top {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 14px;
     }
 
     .logo {
-      width: 48px;
-      height: 48px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      background: white;
       object-fit: cover;
+      background: #f1f5f9;
     }
 
     .org {
-      font-weight: 700;
-      font-size: 1rem;
+      font-weight: 600;
+      font-size: 0.95rem;
     }
 
     .badge {
       display: inline-block;
-      padding: 4px 10px;
+      margin-top: 4px;
+      padding: 3px 8px;
       border-radius: 999px;
       font-size: 0.7rem;
-      background: #334155;
-      margin-top: 4px;
+      background: #e2e8f0;
+      color: #334155;
     }
-
-    .github { background:#1d4ed8; }
-    .git-kernel { background:#f59e0b; }
-
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
 
     .title {
-      font-size: 1.1rem;
-      margin: 15px 0;
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 14px 0 6px 0;
+      line-height: 1.4;
     }
 
     .meta {
       font-size: 0.8rem;
-      color: #cbd5f5;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-size: 0.85rem;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-<h1>🚀 Open Source Contributions</h1>
+<header>
+  <h1>Amishhaa</h1>
+  <div class="subtitle">Open source work</div>
+</header>
+
 <div class="grid" id="list"></div>
 
 <script>
 fetch("./data.json")
   .then(r => r.json())
   .then(data => {
+
+    // Rename closed -> merged (for GitHub PRs)
+    data = data.map(c => {
+      if (c.source === "github" && c.status === "closed") {
+        c.status = "merged";
+      }
+      return c;
+    });
+
     const list = document.getElementById("list");
+
     data.forEach(c => {
       const div = document.createElement("div");
       div.className = "card";
@@ -104,18 +133,17 @@ fetch("./data.json")
           <img src="${c.logo}" class="logo">
           <div>
             <div class="org">${c.org}</div>
-            <div class="badge ${c.source}">${c.source}</div>
+            <div class="badge">${c.source}</div>
           </div>
         </div>
 
         <div class="title">${c.title}</div>
 
         <div class="meta">
-          Status: ${c.status}<br>
-          ${c.date || ""}
+          ${c.status}${c.date ? " · " + c.date : ""}
         </div>
 
-        <a href="${c.link}" target="_blank">View contribution →</a>
+        <a href="${c.link}" target="_blank">View</a>
       `;
       list.appendChild(div);
     });
@@ -124,3 +152,4 @@ fetch("./data.json")
 
 </body>
 </html>
+
