@@ -1,0 +1,22 @@
+name: Update portfolio
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+      - run: pip install requests beautifulsoup4
+      - run: python fetcher.py
+      - run: git config user.name bot
+      - run: git config user.email bot@example.com
+      - run: git add data.json
+      - run: git commit -m "auto update" || true
+      - run: git push

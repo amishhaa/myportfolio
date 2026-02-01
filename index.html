@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Kernel Portfolio</title>
+  <style>
+    body { background:#0f172a; color:white; font-family:sans-serif; }
+    .card { background:#1e293b; padding:15px; margin:10px; border-radius:10px; }
+    .github { border-left:4px solid #3b82f6; }
+    .kernel { border-left:4px solid #22c55e; }
+  </style>
+</head>
+<body>
+
+<h1>🚀 My Open Source Contributions</h1>
+<div id="list"></div>
+
+<script>
+fetch("data.json")
+  .then(r => r.json())
+  .then(data => {
+    const list = document.getElementById("list");
+    data.forEach(c => {
+      const div = document.createElement("div");
+      div.className = "card " + c.source;
+      div.innerHTML = `
+        <h3>${c.title}</h3>
+        <p>Source: ${c.source}</p>
+        <p>Status: ${c.status}</p>
+        <a href="${c.link}" target="_blank">View</a>
+        <p>${c.date}</p>
+      `;
+      list.appendChild(div);
+    });
+  });
+</script>
+
+</body>
+</html>
