@@ -1,0 +1,281 @@
+[
+  {
+    "title": "Adding validation methods for cidr and validation for incoming get requests in Firehol.py.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/intelowlproject/GreedyBear/pull/711",
+    "date": "2026-01-15",
+    "org": "intelowlproject",
+    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+  },
+  {
+    "title": "Tests(Firehol): Adding and improving tests for Firehol.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/intelowlproject/GreedyBear/pull/697",
+    "date": "2026-01-11",
+    "org": "intelowlproject",
+    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+  },
+  {
+    "title": "Test(CronJob): Fix tests breaking after change of send_message function.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/intelowlproject/GreedyBear/pull/695",
+    "date": "2026-01-10",
+    "org": "intelowlproject",
+    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+  },
+  {
+    "title": "Tests(Cronjobs): Adding tests for MonitorLogs and MonitorHoneyPots.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/intelowlproject/GreedyBear/pull/669",
+    "date": "2026-01-02",
+    "org": "intelowlproject",
+    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+  },
+  {
+    "title": "test(cronjobs): Adding integration test for test_monitor_logs.py",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/intelowlproject/GreedyBear/pull/666",
+    "date": "2026-01-01",
+    "org": "intelowlproject",
+    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+  },
+  {
+    "title": "fix: Fixed CSV file import.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/ruxailab/RUXAILAB/pull/1136",
+    "date": "2025-12-23",
+    "org": "ruxailab",
+    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
+  },
+  {
+    "title": "Fix: Critical Privacy and db vulnerability in add cooperators.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/ruxailab/RUXAILAB/pull/1126",
+    "date": "2025-12-21",
+    "org": "ruxailab",
+    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
+  },
+  {
+    "title": "Fix: Heuristic Manager View redirects to 404 broken page.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/ruxailab/RUXAILAB/pull/1125",
+    "date": "2025-12-21",
+    "org": "ruxailab",
+    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
+  },
+  {
+    "title": "(SignIN): fix the error message that is passed during mail not found.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/ruxailab/RUXAILAB/pull/1116",
+    "date": "2025-12-20",
+    "org": "ruxailab",
+    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
+  },
+  {
+    "title": "refactor: remove duplicate function block.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/ruxailab/RUXAILAB/pull/1104",
+    "date": "2025-12-17",
+    "org": "ruxailab",
+    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
+  },
+  {
+    "title": "Updating Ad-hoc framework to add manifest.yml",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/ethereum/consensus-specs/pull/4711",
+    "date": "2025-10-30",
+    "org": "ethereum",
+    "logo": "https://avatars.githubusercontent.com/u/6250754?v=4"
+  },
+  {
+    "title": "contrib: remove deprecated --deep signing from macdeployqtplus",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/bitcoin/bitcoin/pull/33592",
+    "date": "2025-10-09",
+    "org": "bitcoin",
+    "logo": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "title": "chore(fix warnings): fix warnings caused by UI/API folder.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/meshery/meshery/pull/16054",
+    "date": "2025-10-04",
+    "org": "meshery",
+    "logo": "https://avatars.githubusercontent.com/u/52376019?v=4"
+  },
+  {
+    "title": "chore(fix warnings): resolve duplicate import warnings.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/meshery/meshery/pull/16043",
+    "date": "2025-10-03",
+    "org": "meshery",
+    "logo": "https://avatars.githubusercontent.com/u/52376019?v=4"
+  },
+  {
+    "title": "chore: removed unused import in HttpHeadersStringToStringsMap.java",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/microcks/microcks/pull/1768",
+    "date": "2025-10-02",
+    "org": "microcks",
+    "logo": "https://avatars.githubusercontent.com/u/11051048?v=4"
+  },
+  {
+    "title": " chore: removed unused import in HttpHeadersStringToStringsMap.java",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/microcks/microcks/pull/1767",
+    "date": "2025-10-02",
+    "org": "microcks",
+    "logo": "https://avatars.githubusercontent.com/u/11051048?v=4"
+  },
+  {
+    "title": "meeting attendance",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/meshery/meshery/pull/16017",
+    "date": "2025-10-02",
+    "org": "meshery",
+    "logo": "https://avatars.githubusercontent.com/u/52376019?v=4"
+  },
+  {
+    "title": "site-config: adding a new plugin to remove unused CSS at build time.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/layer5io/layer5/pull/6945",
+    "date": "2025-09-30",
+    "org": "layer5io",
+    "logo": "https://avatars.githubusercontent.com/u/44620851?v=4"
+  },
+  {
+    "title": "Enhancement: adding a new plugin to remove unused CSS at build time.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/layer5io/layer5/pull/6943",
+    "date": "2025-09-30",
+    "org": "layer5io",
+    "logo": "https://avatars.githubusercontent.com/u/44620851?v=4"
+  },
+  {
+    "title": "refactor(instrumentation): replace mockito with mockk in ActivityCallbackTestHarness.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/open-telemetry/opentelemetry-android/pull/1263",
+    "date": "2025-09-29",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
+    "title": "refactor(instrumentation): replace Mockito with MockK in ActivityTrac\u2026",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/open-telemetry/opentelemetry-android/pull/1262",
+    "date": "2025-09-29",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
+    "title": "chore: removed unused import in HttpHeadersStringToStringsMap.java",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/microcks/microcks/pull/1758",
+    "date": "2025-09-28",
+    "org": "microcks",
+    "logo": "https://avatars.githubusercontent.com/u/11051048?v=4"
+  },
+  {
+    "title": "chore: rename enum values to uppercase",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/microcks/microcks/pull/1757",
+    "date": "2025-09-28",
+    "org": "microcks",
+    "logo": "https://avatars.githubusercontent.com/u/11051048?v=4"
+  },
+  {
+    "title": "refactor(AndroidResourceTest): update tests to use mockk instead of mockito",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/open-telemetry/opentelemetry-android/pull/1259",
+    "date": "2025-09-27",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
+    "title": "refactor(services): replace Mockito with MockK in ApplicationStateWatcherTest.kt",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/open-telemetry/opentelemetry-android/pull/1258",
+    "date": "2025-09-27",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
+    "title": "contrib: fix macOS deployment with no translations",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/bitcoin/bitcoin/pull/33482",
+    "date": "2025-09-26",
+    "org": "bitcoin",
+    "logo": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "title": "contrib: fix for macOS deployment build failing on Qt translations even though it is optional.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/bitcoin/bitcoin/pull/33358",
+    "date": "2025-09-10",
+    "org": "bitcoin",
+    "logo": "https://avatars.githubusercontent.com/u/528860?v=4"
+  },
+  {
+    "title": "Updated README.md to reflect latest versions of dev env and clear instructions #646",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/ruxailab/RUXAILAB/pull/750",
+    "date": "2025-03-25",
+    "org": "ruxailab",
+    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
+  },
+  {
+    "title": "Fixed previous commit breaking CreateBlankView.vue",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/ruxailab/RUXAILAB/pull/741",
+    "date": "2025-03-24",
+    "org": "ruxailab",
+    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
+  },
+  {
+    "title": "feat: refactor and add protocol support to `stats/base/stdevpn`",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/stdlib-js/stdlib/pull/6225",
+    "date": "2025-03-20",
+    "org": "stdlib-js",
+    "logo": "https://avatars.githubusercontent.com/u/17805691?v=4"
+  },
+  {
+    "title": "My Git Project Patches",
+    "source": "git-kernel",
+    "status": "mailing list",
+    "link": "https://lore.kernel.org/git/?q=amishhhaaaa",
+    "date": "",
+    "org": "git",
+    "logo": "https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png"
+  }
+]
