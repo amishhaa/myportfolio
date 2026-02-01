@@ -1,9 +1,7 @@
 import requests
-from bs4 import BeautifulSoup
 import json
 
 GITHUB_USER = "amishhaa"
-EMAIL = "amishhhaaaa@gmail.com"
 
 data = []
 
@@ -20,31 +18,21 @@ def fetch_github():
             "date": item["created_at"]
         })
 
-# ---------- Kernel patches ----------
-def fetch_kernel():
-    url = f"https://lore.kernel.org/all/?q=from:{EMAIL}"
-    html = requests.get(url).text
-    soup = BeautifulSoup(html, "html.parser")
-
-    for row in soup.find_all("tr"):
-        cols = row.find_all("td")
-        if len(cols) >= 3:
-            title = cols[1].text.strip()
-            date = cols[0].text.strip()
-            link = "https://lore.kernel.org" + cols[1].find("a")["href"]
-
-            data.append({
-                "title": title,
-                "source": "kernel",
-                "status": "submitted",
-                "link": link,
-                "date": date
-            })
+# ---------- Git (kernel.org) patches ----------
+def fetch_git_kernel():
+    data.append({
+        "title": "My Git project patches",
+        "source": "git-kernel",
+        "status": "mailing list",
+        "link": "https://lore.kernel.org/git/?q=amishhhaaaa",
+        "date": ""
+    })
 
 fetch_github()
-fetch_kernel()
+fetch_git_kernel()
 
 with open("data.json", "w") as f:
     json.dump(data, f, indent=2)
 
 print("Updated data.json")
+
