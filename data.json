@@ -2,7 +2,7 @@
   {
     "title": "grater: Add submodule grater",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1673",
     "date": "2026-03-11",
     "org": "open-telemetry",
