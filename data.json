@@ -1,5 +1,14 @@
 [
   {
+    "title": "grater: Add submodule grater",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1673",
+    "date": "2026-03-11",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
     "title": "Adding validation methods for cidr and validation for incoming get requests in Firehol.py.",
     "source": "github",
     "status": "closed",
@@ -110,7 +119,7 @@
   {
     "title": "chore(fix warnings): fix warnings caused by UI/API folder.",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/meshery/meshery/pull/16054",
     "date": "2025-10-04",
     "org": "meshery",
@@ -119,7 +128,7 @@
   {
     "title": "chore(fix warnings): resolve duplicate import warnings.",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/meshery/meshery/pull/16043",
     "date": "2025-10-03",
     "org": "meshery",
@@ -259,15 +268,6 @@
     "date": "2025-03-24",
     "org": "ruxailab",
     "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
-  },
-  {
-    "title": "feat: refactor and add protocol support to `stats/base/stdevpn`",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/stdlib-js/stdlib/pull/6225",
-    "date": "2025-03-20",
-    "org": "stdlib-js",
-    "logo": "https://avatars.githubusercontent.com/u/17805691?v=4"
   },
   {
     "title": "My Git Project Patches",
