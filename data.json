@@ -1,5 +1,14 @@
 [
   {
+    "title": "grater: Initialize CLI with cobra in grater submodule.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1681",
+    "date": "2026-03-13",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
     "title": "grater: Add submodule grater",
     "source": "github",
     "status": "closed",
@@ -257,15 +266,6 @@
     "status": "closed",
     "link": "https://github.com/ruxailab/RUXAILAB/pull/750",
     "date": "2025-03-25",
-    "org": "ruxailab",
-    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
-  },
-  {
-    "title": "Fixed previous commit breaking CreateBlankView.vue",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/ruxailab/RUXAILAB/pull/741",
-    "date": "2025-03-24",
     "org": "ruxailab",
     "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
   },
