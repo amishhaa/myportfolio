@@ -137,7 +137,7 @@
   {
     "title": "contrib: remove deprecated --deep signing from macdeployqtplus",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/bitcoin/bitcoin/pull/33592",
     "date": "2025-10-09",
     "org": "bitcoin",
