@@ -9,7 +9,7 @@
     "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
   },
   {
-    "title": "add: add command 'add' that adds dependents to dependents.txt",
+    "title": "add: add command 'add' that adds dependents to dependents.json",
     "source": "github",
     "status": "open",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1702",
