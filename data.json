@@ -11,7 +11,7 @@
   {
     "title": "add: add command 'add' that adds dependents to dependents.json",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1702",
     "date": "2026-03-23",
     "org": "open-telemetry",
