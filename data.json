@@ -66,46 +66,46 @@
     "title": "Adding validation methods for cidr and validation for incoming get requests in Firehol.py.",
     "source": "github",
     "status": "closed",
-    "link": "https://github.com/intelowlproject/GreedyBear/pull/711",
+    "link": "https://github.com/GreedyBear-Project/GreedyBear/pull/711",
     "date": "2026-01-15",
-    "org": "intelowlproject",
-    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+    "org": "GreedyBear-Project",
+    "logo": "https://avatars.githubusercontent.com/u/272869833?v=4"
   },
   {
     "title": "Tests(Firehol): Adding and improving tests for Firehol.",
     "source": "github",
     "status": "closed",
-    "link": "https://github.com/intelowlproject/GreedyBear/pull/697",
+    "link": "https://github.com/GreedyBear-Project/GreedyBear/pull/697",
     "date": "2026-01-11",
-    "org": "intelowlproject",
-    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+    "org": "GreedyBear-Project",
+    "logo": "https://avatars.githubusercontent.com/u/272869833?v=4"
   },
   {
     "title": "Test(CronJob): Fix tests breaking after change of send_message function.",
     "source": "github",
     "status": "closed",
-    "link": "https://github.com/intelowlproject/GreedyBear/pull/695",
+    "link": "https://github.com/GreedyBear-Project/GreedyBear/pull/695",
     "date": "2026-01-10",
-    "org": "intelowlproject",
-    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+    "org": "GreedyBear-Project",
+    "logo": "https://avatars.githubusercontent.com/u/272869833?v=4"
   },
   {
     "title": "Tests(Cronjobs): Adding tests for MonitorLogs and MonitorHoneyPots.",
     "source": "github",
     "status": "closed",
-    "link": "https://github.com/intelowlproject/GreedyBear/pull/669",
+    "link": "https://github.com/GreedyBear-Project/GreedyBear/pull/669",
     "date": "2026-01-02",
-    "org": "intelowlproject",
-    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+    "org": "GreedyBear-Project",
+    "logo": "https://avatars.githubusercontent.com/u/272869833?v=4"
   },
   {
     "title": "test(cronjobs): Adding integration test for test_monitor_logs.py",
     "source": "github",
     "status": "closed",
-    "link": "https://github.com/intelowlproject/GreedyBear/pull/666",
+    "link": "https://github.com/GreedyBear-Project/GreedyBear/pull/666",
     "date": "2026-01-01",
-    "org": "intelowlproject",
-    "logo": "https://avatars.githubusercontent.com/u/65157868?v=4"
+    "org": "GreedyBear-Project",
+    "logo": "https://avatars.githubusercontent.com/u/272869833?v=4"
   },
   {
     "title": "fix: Fixed CSV file import.",
