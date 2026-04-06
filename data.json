@@ -1,5 +1,86 @@
 [
   {
+    "title": "CI: Update CI to only run tests for the modules having changes and add a test-integration job.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1731",
+    "date": "2026-04-05",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
+    "title": "Test that integration tests only runs integration test files.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/13",
+    "date": "2026-04-05",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "Test changes in root are handled.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/12",
+    "date": "2026-04-05",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "Test CI detects change in 2 modules.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/11",
+    "date": "2026-04-05",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "Test CI detects one module.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/10",
+    "date": "2026-04-05",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "PR TEST CI",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/9",
+    "date": "2026-04-05",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "PR TEST CI",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/8",
+    "date": "2026-04-05",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "PR TEST CI",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1730",
+    "date": "2026-04-05",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
+    "title": "PR TEST CI",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/7",
+    "date": "2026-04-05",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
     "title": "PR TEST CI",
     "source": "github",
     "status": "closed",
@@ -187,87 +268,6 @@
     "date": "2025-12-17",
     "org": "ruxailab",
     "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
-  },
-  {
-    "title": "Updating Ad-hoc framework to add manifest.yml",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/ethereum/consensus-specs/pull/4711",
-    "date": "2025-10-30",
-    "org": "ethereum",
-    "logo": "https://avatars.githubusercontent.com/u/6250754?v=4"
-  },
-  {
-    "title": "contrib: remove deprecated --deep signing from macdeployqtplus",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/bitcoin/bitcoin/pull/33592",
-    "date": "2025-10-09",
-    "org": "bitcoin",
-    "logo": "https://avatars.githubusercontent.com/u/528860?v=4"
-  },
-  {
-    "title": "chore(fix warnings): fix warnings caused by UI/API folder.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/meshery/meshery/pull/16054",
-    "date": "2025-10-04",
-    "org": "meshery",
-    "logo": "https://avatars.githubusercontent.com/u/52376019?v=4"
-  },
-  {
-    "title": "chore(fix warnings): resolve duplicate import warnings.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/meshery/meshery/pull/16043",
-    "date": "2025-10-03",
-    "org": "meshery",
-    "logo": "https://avatars.githubusercontent.com/u/52376019?v=4"
-  },
-  {
-    "title": "chore: removed unused import in HttpHeadersStringToStringsMap.java",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/microcks/microcks/pull/1768",
-    "date": "2025-10-02",
-    "org": "microcks",
-    "logo": "https://avatars.githubusercontent.com/u/11051048?v=4"
-  },
-  {
-    "title": " chore: removed unused import in HttpHeadersStringToStringsMap.java",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/microcks/microcks/pull/1767",
-    "date": "2025-10-02",
-    "org": "microcks",
-    "logo": "https://avatars.githubusercontent.com/u/11051048?v=4"
-  },
-  {
-    "title": "meeting attendance",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/meshery/meshery/pull/16017",
-    "date": "2025-10-02",
-    "org": "meshery",
-    "logo": "https://avatars.githubusercontent.com/u/52376019?v=4"
-  },
-  {
-    "title": "site-config: adding a new plugin to remove unused CSS at build time.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/layer5io/layer5/pull/6945",
-    "date": "2025-09-30",
-    "org": "layer5io",
-    "logo": "https://avatars.githubusercontent.com/u/44620851?v=4"
-  },
-  {
-    "title": "Enhancement: adding a new plugin to remove unused CSS at build time.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/layer5io/layer5/pull/6943",
-    "date": "2025-09-30",
-    "org": "layer5io",
-    "logo": "https://avatars.githubusercontent.com/u/44620851?v=4"
   },
   {
     "title": "My Git Project Patches",
