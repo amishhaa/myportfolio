@@ -1,5 +1,50 @@
 [
   {
+    "title": "Handle edge",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/26",
+    "date": "2026-04-09",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "Reproduction test case",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/25",
+    "date": "2026-04-09",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "CI: AFFECTED_MODULES should exclude internal/tools and checkapi internals.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1741",
+    "date": "2026-04-09",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
+    "title": "fix(deps): update golang.org/x",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/24",
+    "date": "2026-04-09",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "t",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/23",
+    "date": "2026-04-09",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
     "title": "CI: Make a new job to run integration tests only on ubuntu",
     "source": "github",
     "status": "open",
@@ -11,7 +56,7 @@
   {
     "title": "tst",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/22",
     "date": "2026-04-09",
     "org": "amishhaa",
@@ -223,51 +268,6 @@
     "date": "2026-04-02",
     "org": "amishhaa",
     "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "CI: small change to test CI",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/1",
-    "date": "2026-04-02",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "grater: add run command and runner backend.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1706",
-    "date": "2026-03-27",
-    "org": "open-telemetry",
-    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
-  },
-  {
-    "title": "grater: add command 'add' that adds dependents to dependents.json",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1702",
-    "date": "2026-03-23",
-    "org": "open-telemetry",
-    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
-  },
-  {
-    "title": "grater: Add struct workspace",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1689",
-    "date": "2026-03-16",
-    "org": "open-telemetry",
-    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
-  },
-  {
-    "title": "grater: Initialize CLI with cobra in grater submodule.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1681",
-    "date": "2026-03-13",
-    "org": "open-telemetry",
-    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
   },
   {
     "title": "My Git Project Patches",
