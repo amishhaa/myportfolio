@@ -1,8 +1,26 @@
 [
   {
-    "title": "Test pr 6",
+    "title": "CI: Make CI only use modules containing affected files to build, run tests and linters.",
     "source": "github",
     "status": "open",
+    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1736",
+    "date": "2026-04-08",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
+    "title": "CI: Make CI only use modules containing affected files.",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/18",
+    "date": "2026-04-08",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "Test pr 6",
+    "source": "github",
+    "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/17",
     "date": "2026-04-08",
     "org": "amishhaa",
@@ -250,24 +268,6 @@
     "date": "2026-01-02",
     "org": "GreedyBear-Project",
     "logo": "https://avatars.githubusercontent.com/u/272869833?v=4"
-  },
-  {
-    "title": "test(cronjobs): Adding integration test for test_monitor_logs.py",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/GreedyBear-Project/GreedyBear/pull/666",
-    "date": "2026-01-01",
-    "org": "GreedyBear-Project",
-    "logo": "https://avatars.githubusercontent.com/u/272869833?v=4"
-  },
-  {
-    "title": "fix: Fixed CSV file import.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/ruxailab/RUXAILAB/pull/1136",
-    "date": "2025-12-23",
-    "org": "ruxailab",
-    "logo": "https://avatars.githubusercontent.com/u/76138601?v=4"
   },
   {
     "title": "My Git Project Patches",
