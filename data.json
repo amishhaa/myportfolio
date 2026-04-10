@@ -47,7 +47,7 @@
   {
     "title": "CI: Make a new job to run integration tests only on ubuntu",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1739",
     "date": "2026-04-09",
     "org": "open-telemetry",
