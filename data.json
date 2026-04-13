@@ -1,5 +1,14 @@
 [
   {
+    "title": "arraymath: add temporal scalar support for np.min and np.max",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/numba/numba/pull/10533",
+    "date": "2026-04-12",
+    "org": "numba",
+    "logo": "https://avatars.githubusercontent.com/u/1628082?v=4"
+  },
+  {
     "title": "Handle edge",
     "source": "github",
     "status": "open",
@@ -257,15 +266,6 @@
     "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/3",
     "date": "2026-04-05",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "test",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/2",
-    "date": "2026-04-02",
     "org": "amishhaa",
     "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
   },
