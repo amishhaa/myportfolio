@@ -1,5 +1,14 @@
 [
   {
+    "title": "Doccon",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/27",
+    "date": "2026-04-16",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
     "title": "grater: add basic interface to interact with docker.",
     "source": "github",
     "status": "open",
@@ -256,15 +265,6 @@
     "source": "github",
     "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/5",
-    "date": "2026-04-05",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "PR TEST CI",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/4",
     "date": "2026-04-05",
     "org": "amishhaa",
     "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
