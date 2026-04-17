@@ -1,5 +1,14 @@
 [
   {
+    "title": "Pr test br",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/28",
+    "date": "2026-04-17",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
     "title": "Doccon",
     "source": "github",
     "status": "open",
@@ -29,7 +38,7 @@
   {
     "title": "Handle edge",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/26",
     "date": "2026-04-09",
     "org": "amishhaa",
@@ -256,15 +265,6 @@
     "source": "github",
     "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/6",
-    "date": "2026-04-05",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "PR TEST CI",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/5",
     "date": "2026-04-05",
     "org": "amishhaa",
     "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
