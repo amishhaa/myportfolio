@@ -153,7 +153,7 @@
     "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
   },
   {
-    "title": "arraymath: add temporal scalar support for np.min and np.max",
+    "title": "arraymath: add temporal scalar support for np reduction functions",
     "source": "github",
     "status": "open",
     "link": "https://github.com/numba/numba/pull/10533",
