@@ -155,7 +155,7 @@
   {
     "title": "grater: add basic interface to interact with docker.",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1758",
     "date": "2026-04-14",
     "org": "open-telemetry",
