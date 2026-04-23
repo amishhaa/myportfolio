@@ -1,8 +1,17 @@
 [
   {
-    "title": "CI: add integration tag to include test files with that tag in coverage",
+    "title": "Runner demo",
     "source": "github",
     "status": "open",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/42",
+    "date": "2026-04-23",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "CI: add integration tag to include test files with that tag in coverage",
+    "source": "github",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1765",
     "date": "2026-04-19",
     "org": "open-telemetry",
@@ -259,15 +268,6 @@
     "date": "2026-04-08",
     "org": "open-telemetry",
     "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
-  },
-  {
-    "title": "CI: Make CI only use modules containing affected files.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/18",
-    "date": "2026-04-08",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
   },
   {
     "title": "My Git Project Patches",
