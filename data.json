@@ -1,5 +1,23 @@
 [
   {
+    "title": "_tree: reduce time complexity for queue pop operation from O(n) to O(1).",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/shap/shap/pull/4799",
+    "date": "2026-04-23",
+    "org": "shap",
+    "logo": "https://avatars.githubusercontent.com/u/60805229?v=4"
+  },
+  {
+    "title": "explainers: small fix to remove unreachable return statement.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/shap/shap/pull/4798",
+    "date": "2026-04-23",
+    "org": "shap",
+    "logo": "https://avatars.githubusercontent.com/u/60805229?v=4"
+  },
+  {
     "title": "Runner demo",
     "source": "github",
     "status": "open",
@@ -250,24 +268,6 @@
     "date": "2026-04-09",
     "org": "amishhaa",
     "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "test",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/19",
-    "date": "2026-04-09",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "CI: Make CI only use modules containing affected files to build, run tests and linters.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1736",
-    "date": "2026-04-08",
-    "org": "open-telemetry",
-    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
   },
   {
     "title": "My Git Project Patches",
