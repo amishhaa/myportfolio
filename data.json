@@ -9,7 +9,7 @@
     "logo": "https://avatars.githubusercontent.com/u/60805229?v=4"
   },
   {
-    "title": "explainers: small fix to remove unreachable return statement.",
+    "title": "FIX: small fix to remove unreachable return statement.",
     "source": "github",
     "status": "open",
     "link": "https://github.com/shap/shap/pull/4798",
