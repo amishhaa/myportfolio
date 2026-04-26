@@ -1,5 +1,14 @@
 [
   {
+    "title": "cmd: add cmd set-up and initialise go module",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/clamp/pull/1",
+    "date": "2026-04-26",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
     "title": "_tree: reduce time complexity for queue pop operation from O(n) to O(1).",
     "source": "github",
     "status": "open",
@@ -256,15 +265,6 @@
     "source": "github",
     "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/21",
-    "date": "2026-04-09",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "tst",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/20",
     "date": "2026-04-09",
     "org": "amishhaa",
     "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
