@@ -200,7 +200,7 @@
   {
     "title": "arraymath: add temporal scalar support for np reduction functions",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/numba/numba/pull/10533",
     "date": "2026-04-12",
     "org": "numba",
