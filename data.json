@@ -1,5 +1,14 @@
 [
   {
+    "title": "grater: remove dependent struct in favor of generalised Module struct with NewModule constructor",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1799",
+    "date": "2026-04-27",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
     "title": "cmd: add cmd set-up and initialise go module",
     "source": "github",
     "status": "closed",
@@ -259,15 +268,6 @@
     "date": "2026-04-05",
     "org": "open-telemetry",
     "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
-  },
-  {
-    "title": "Test that integration tests only runs integration test files.",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/13",
-    "date": "2026-04-05",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
   },
   {
     "title": "My Git Project Patches",
