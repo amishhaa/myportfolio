@@ -2,7 +2,7 @@
   {
     "title": "grater: remove dependent struct in favor of generalised Module struct with NewModule constructor",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1799",
     "date": "2026-04-27",
     "org": "open-telemetry",
