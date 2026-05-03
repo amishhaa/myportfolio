@@ -1,6 +1,6 @@
 [
   {
-    "title": "docker: support copying content of local paths in addition to volumes in containers.",
+    "title": "grater: Add support for response, config structs and copying host path dirs to containers.",
     "source": "github",
     "status": "open",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1810",
