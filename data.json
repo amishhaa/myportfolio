@@ -2,7 +2,7 @@
   {
     "title": "grater: Add support for response, config structs and copying host path dirs to containers.",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1810",
     "date": "2026-04-30",
     "org": "open-telemetry",
