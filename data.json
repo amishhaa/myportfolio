@@ -2,7 +2,7 @@
   {
     "title": "grater: add version to Module struct as replace needs version of modules.",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1862",
     "date": "2026-05-10",
     "org": "open-telemetry",
