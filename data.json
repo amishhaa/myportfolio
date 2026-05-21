@@ -1,8 +1,8 @@
 [
   {
-    "title": "grater: add command replace",
+    "title": "grater: Add command replace",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1881",
     "date": "2026-05-19",
     "org": "open-telemetry",
@@ -29,7 +29,7 @@
   {
     "title": "grater: Add methods for executing basic repetitive commands.",
     "source": "github",
-    "status": "open",
+    "status": "closed",
     "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1866",
     "date": "2026-05-12",
     "org": "open-telemetry",
