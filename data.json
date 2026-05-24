@@ -1,5 +1,14 @@
 [
   {
+    "title": "Report",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/47",
+    "date": "2026-05-24",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
     "title": "Core run",
     "source": "github",
     "status": "closed",
@@ -256,15 +265,6 @@
     "source": "github",
     "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/34",
-    "date": "2026-04-19",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "Doccon",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/33",
     "date": "2026-04-19",
     "org": "amishhaa",
     "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
