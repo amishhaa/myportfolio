@@ -1,5 +1,41 @@
 [
   {
+    "title": "Core run",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/46",
+    "date": "2026-05-23",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "Report",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/45",
+    "date": "2026-05-23",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "Find",
+    "source": "github",
+    "status": "closed",
+    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/44",
+    "date": "2026-05-23",
+    "org": "amishhaa",
+    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
+  },
+  {
+    "title": "grater: Add methods to find dependents for a give module.",
+    "source": "github",
+    "status": "open",
+    "link": "https://github.com/open-telemetry/opentelemetry-go-build-tools/pull/1901",
+    "date": "2026-05-23",
+    "org": "open-telemetry",
+    "logo": "https://avatars.githubusercontent.com/u/49998002?v=4"
+  },
+  {
     "title": "report: Add methods to generate report from execute commands responses.",
     "source": "github",
     "status": "open",
@@ -229,42 +265,6 @@
     "source": "github",
     "status": "closed",
     "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/33",
-    "date": "2026-04-19",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "fix: coverage.out override",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/32",
-    "date": "2026-04-19",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "Test codecov inti",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/31",
-    "date": "2026-04-19",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "Test CI test-integration codecov",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/30",
-    "date": "2026-04-19",
-    "org": "amishhaa",
-    "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
-  },
-  {
-    "title": "CI: add test-integration-coverage to upload coverage reports for buil\u2026",
-    "source": "github",
-    "status": "closed",
-    "link": "https://github.com/amishhaa/opentelemetry-go-build-tools/pull/29",
     "date": "2026-04-19",
     "org": "amishhaa",
     "logo": "https://avatars.githubusercontent.com/u/136238836?v=4"
